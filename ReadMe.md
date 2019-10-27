@@ -1,14 +1,8 @@
-YddoT - Api
+# YddoT - Api
+
+### Get - Requests:
 
 
--------------------
-
-
-Get - Requests:
-
-
-/newsbreak
-
-/newstech/wired
-
-/newstech/techradar
+*/newsbreak
+*/newstech/wired
+*/newstech/techradar
