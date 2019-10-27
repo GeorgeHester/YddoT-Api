@@ -1,12 +1,14 @@
 //nodejs imports
 const fs = require('fs');
-const request = require('request-promise');
+const request = require('request');
 const editjson = require("edit-json-file");
+const rp = require('request-promise');
 
 console.log('[ App: Start ]');
 
+/*
 //function to make a request and write the data to file
-async function getdata(url, file) {
+function getdata(url, file) {
 
     //testing log
     console.log('hello')
@@ -16,7 +18,7 @@ async function getdata(url, file) {
         if (err) {
             return console.log(err); 
         };
-        
+
         //gets the data and writes it to file
         let rawfiledata = res.body;
         let filedata = JSON.stringify(rawfiledata);
@@ -26,7 +28,34 @@ async function getdata(url, file) {
         console.log('Written');
     });
 
+    console.log(request);
+    console.log(request.res.body);
+
+    let rawfiledata = request.res.body;
+    let filedata = JSON.stringify(rawfiledata);
+    fs.writeFileSync(file, filedata);
+
+};*/
+/*
+function getdata(url, file) {
+
+    console.log(url);
+
+    var options = {
+        uri: url,
+        json: true
+    };
+     
+    rp(options)
+        .then(function (repos) {
+            console.log(repos.JSON);
+        })
+        .catch(function (err) {
+            console.log('ffs')
+        });
 };
+*/
+
 
 //function with all requests needed to be made
 function getrequests() {

@@ -74,6 +74,7 @@ app.get('/newsbreak', (req, res) => {
     console.log(mins);
     console.log('/newsbreak');
 
+
     if (mins === 00 || mins === 15 || mins === 30 || mins === 40 || mins === 60) {
         request('https://newsapi.org/v2/top-headlines?country=gb&pageSize=3&apiKey=4c75d0c75a2c41f9a1c8563fa358e81b', { json: true }, (err, res, body) => {
             if (err) {
