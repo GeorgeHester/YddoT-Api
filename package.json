@@ -1,11 +1,11 @@
 {
-  "name": "Node-API",
+  "name": "YddoT-API",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node files.js node app.js"
   },
   "keywords": [],
   "author": "",
