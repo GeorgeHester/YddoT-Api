@@ -4,7 +4,6 @@
 
 ### Get - Requests:
 
-
-* /newsbreak
-* /newstech/wired
-* /newstech/techradar
+```/newsbreak```
+```/newstech/wired```
+```/newstech/techradar```
